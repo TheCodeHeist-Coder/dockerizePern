@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch dist/index.js",
+    "dev": "tsc -b && node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +22,9 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
+    "@types/express": "^5.0.6",
     "dotenv": "^17.3.1",
+    "express": "^5.2.1",
     "pg": "^8.20.0"
   }
 }
